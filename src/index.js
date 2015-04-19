@@ -9,6 +9,7 @@ var row = 4;
 var index = 0;
 var game = false;
 var time = null;
+var rec = null;
 	
 	//On load function
 	window.onload = function() {
@@ -25,6 +26,9 @@ var time = null;
 
 		//Attaches an event handler to the shuffle button that calls the shuffle function
 		document.getElementById("shufflebutton").onclick = shuffle;
+
+		//Attaches an event handler to the submit button of the 15 puzzles game
+		document.getElementById("Sub").onclick = getName;
 	};
 
 
@@ -133,17 +137,14 @@ var time = null;
 				tot++;
 			}
 			if(tot == 15){
-				alert("Game Over");
+				//alert("Game Over");
 				game == false;
 				var d = new Date();
         		var t = d.getTime();
-        		var rec = (t - time)/1000
-        		alert("Time = " + rec + " seconds!");
-        		var modal = document.getElementById("userName");
-        		$(modal).modal('show');
-        		var xmlhttp = new XMLHttpRequest();
-        		xmlhttp.open("GET","index.php?time=" + rec, true);
-        		xmlhttp.send();
+        		rec = (t - time)/1000
+        		//alert("Time = " + rec + " seconds!");
+        		var usrname = document.getElementById("userName");
+        		$(usrname).modal('show');
 			}
 		}
 	}
@@ -234,5 +235,15 @@ var time = null;
 		} else {
 			index = index + 1;
 		}
+	}
+
+	function getName() {
+		var name = document.getElementById("usr").value;
+		var usrname = document.getElementById("userName");
+      $(usrname).modal('hide');
+		var xmlhttp = new XMLHttpRequest();
+  		xmlhttp.open("GET","index.php?time=" + rec + "&name=" + name, true);
+  		xmlhttp.send();
+  		//location.reload(true);
 	}
 })();

@@ -11,7 +11,7 @@ body {
 	text-align: center;
 }
 
-i {
+i, #switch-type {
 	color: #2C3E50;
 }
 
@@ -89,7 +89,7 @@ i {
 	display: inline-block;
 }
 
-.fa-stack>i, .fa-users {
+.fa-stack>i, .fa-users, .fa-refresh {
 	color: #F2F1EF;
 }
 

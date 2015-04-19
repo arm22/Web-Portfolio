@@ -33,8 +33,8 @@
 				<div class="col-md-12" id="center">
 			  		<p><img src="logo.png" alt="logo" width="300px" height="400px" /></p>
 					<p>Hello,</p>
-					<p>I'm Austin Meyers &</p>
-					<p>I'm <span id="spin">a coder</span>.</p>
+					<p>I'm Austin Meyers</p>
+					<p>& I'm <span id="spin">a coder</span>.</p>
 					<i class="fa fa-chevron-circle-down fa-3x"></i>
 					<?php 
 					if ($nfc == true) { ?>
@@ -65,6 +65,7 @@
 				<div class="col-md-4 left">
 					<p>I build things driven by user interaction.</p>
 					<p><i class="fa fa-users fa-3x"></i></p>
+					<p>'Tile Puzzle' is a web based game optimized for all devices.</p>
 				</div>
 				<div class="col-md-4" id="noPad">
 					<div id="puzzlearea">
@@ -73,7 +74,7 @@
 					<button type="button" id="shufflebutton" class="btn btn-success btn-lg">Shuffle</button>
 				</div>
 				<div class="col-md-4 right">
-					<h2>Leaderboard</h2>
+					<h1><u>Leaderboard</u></h1>
 					<?php
 						$myfile = fopen("leader.txt", "r") or die("Unable to open file!");
 						echo fread($myfile,filesize("leader.txt"));
@@ -89,13 +90,9 @@
 										<h4 class="modal-title" id="myModalLabel">Add your name to the leader board!</h4>
 									</div>
 									<div class="modal-body">
-											<form method="get" action="index.php" role="form">
-												<div class="form-group">
-													<label for="usr">Arcade Name:</label>
-													<input type="text" class="form-control" id="usr">
-												</div>
-											<button type="submit" class="btn btn-default">Submit</button>
-										</form>
+										<label for="usr">Arcade Name</label>
+										<input type="text" class="form-control" id="usr">
+										<button class="btn btn-default" id="Sub">Submit</button>
 									</div>
 								</div><!-- /.modal-dialog -->
 							</div><!-- /.modal -->
@@ -104,17 +101,17 @@
 						$time = $_GET["time"];
 						if($time != ""){
 							$name = $_GET["name"];
-							console.log($time + $name);
-							file_put_contents("leader.txt", $name.':'.$time."\n", FILE_APPEND);
+							file_put_contents("leader.txt", $name.' : '.$time."\n", FILE_APPEND);
 						}
 					?>
+					<p><a href="http://www.austinrmeyers.com"><i class="fa fa-refresh fa-2x"></i></a></p>
 				</div>
 			</div>
 			<div class="row" id="one">
-				<div class="col-md-6">
-					<p>Using Python, and a Photo Manipulation library called Pixel Math, </p>
+				<div class="col-md-6" id="switch-type">
+					<p>Using Python, and a photo manipulation library called Pixel Math, </p>
 					<p><a href="sudoku/Sudoku.jar" download="FinalProject.zip"><img src="ImageScrambler.PNG" alt="ImageScrambler" width="309px" height="309px"></a></p>
-					<p>'Image Scrambler' uses mathematical functions and a user interface to educate about Image Processing by playing a game.</p>
+					<p>'Image Scrambler' uses mathematical functions and a user interface to educate about image processing via game-play.</p>
 					<a href="sudoku/Sudoku.jar" download="FinalProject.zip"><button type="button" class="btn btn-default btn-lg">
 					Download Image Scrambler</button></a>
 				</div>
@@ -131,17 +128,17 @@
 					perspective on lightweight, agile web development.</p>
 				</div>
 				<div class="col-md-6 mid-right">
-					<p>'Recursive Sudoku' was a project I created as part of the 24 hour CodeDay Hackathon in 2014.</p>
+					<p>'Recursive Sudoku' was created as part of the 24 hour CodeDay Hackathon in 2014.</p>
 					<a href="sudoku/Sudoku.jar" download="Sudoku.jar"><button type="button" class="btn btn-default btn-lg">
 					Download Sudoku.jar</button></a>
 				</div>
 			</div>
 			<div class="row" id="one">
 				<div class="col-md-12" id="center">
-					<p>Resume</p>
+					<p><a href="Resume.pdf" target="_blank"><img src="Resume.jpg" alt="Resume" width="50%" height="30%" /></a></p>
 				</div>
 			</div>
-			<div class="row" id="one">
+			<div class="row" id="last">
 				<div class="col-md-6">
 					<p>100% Locally Hosted.</p>
 					<p><img src="rasbpi.png" alt="logo" width="70px" height="90px" /></p>
