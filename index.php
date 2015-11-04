@@ -69,7 +69,7 @@
 						<a href="Resume.pdf" target="_blank" class="list-group-item">
 							Resume
 						</a>
-						<a href="http://www.austinrmeyers.me/info343/final-project/" target="_blank" class="list-group-item">
+						<a href="http://www.austinrmeyers.com/info343/final-project/" target="_blank" class="list-group-item">
 							Angular Home Page
 						</a>
 						<a href="imagepage.html" target="_blank" class="list-group-item">
