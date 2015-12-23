@@ -72,6 +72,9 @@
 						<a href="http://www.austinrmeyers.com/info343/final-project/" target="_blank" class="list-group-item">
 							Angular Home Page
 						</a>
+						<a href="http://spd-video-map.appspot.com/" target="_blank" class="list-group-item">
+							SPD Map
+						</a>
 						<a href="imagepage.html" target="_blank" class="list-group-item">
 							Image Scrambler
 						</a>
