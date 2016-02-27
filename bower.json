@@ -1,0 +1,22 @@
+{
+  "name": "Web-Portfolio",
+  "main": "index.js",
+  "homepage": "https://github.com/arm22/Web-Portfolio",
+  "authors": [
+    "Austin Meyers <meyersaustin22@gmail.com>"
+  ],
+  "description": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.1"
+  }
+}
