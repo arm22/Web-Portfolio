@@ -16,9 +16,9 @@
 	    <!-- JQuery CDN -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    <!-- Personal CSS -->
-		<link href="index.css" type="text/css" rel="stylesheet" />
+		<link href="css/index.css" type="text/css" rel="stylesheet" />
 		<title>Austin Meyers | Developer</title>
-		<link rel="Shortcut Icon" type="image/ico" href="transparent.ico" />
+		<link rel="Shortcut Icon" type="image/ico" href="img/transparent.ico" />
 		<?php 
 			if(!isset($_GET["nfc"])){
 				$nfc = false;
@@ -31,7 +31,7 @@
 		<div class="container-fluid">
 			<div class="row" id="one">
 				<div class="col-md-12">
-			  		<p><img src="logo.png" class="image-responsive" alt="logo" width="300px" height="400px" /></p>
+			  		<p><img src="img/logo.png" class="image-responsive" alt="logo" width="300px" height="400px" /></p>
 					<p>Hello,</p>
 					<p>I'm Austin Meyers</p>
 					<p>& I'm <span id="spin">a coder</span>.</p>
@@ -62,7 +62,7 @@
 			</div>
 			<div class="row" id="two">
 				<div class="col-md-6">
-					<img id="face" src="face.jpg" class="img-responsive img-circle" alt="Face">
+					<img id="face" src="img/face.jpg" class="img-responsive img-circle" alt="Face">
 				</div>
 				<div class="col-md-6">
 					<div class="list-group">
@@ -96,7 +96,7 @@
 			<div class="row" id="footer">
 				<div class="col-md-6">
 					<div>
-						<img src="rasbpi.png" alt="logo" class="img-responsive center" width="42px" height="53px" />
+						<img src="img/rasbpi.png" alt="logo" class="img-responsive center" width="42px" height="53px" />
 						<p>100% Locally Hosted.</p>
 					</div>
 				</div>
