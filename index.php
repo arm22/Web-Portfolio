@@ -1,25 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta name="google-site-verification" content="tY_4djMl2E9ysu0JXCfs0gmnZeOrjj3P4ly4fpfZ_bc" />
-		<meta name="Austin Meyers | Developer" content="Personal web-page of Austin R. Meyers." />
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	    <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		<!-- Optional CSS theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-	    <!-- Custom Google Font -->
-	    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-	    <!-- Font Awesome CDN -->
-	    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	    <!-- JQuery CDN -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	    <!-- Personal CSS -->
-		<link href="css/index.css" type="text/css" rel="stylesheet" />
-		<title>Austin Meyers | Developer</title>
-		<link rel="Shortcut Icon" type="image/ico" href="img/transparent.ico" />
 		<?php 
+		include 'functions/functions.php';
+		fill_head();
 			if(!isset($_GET["nfc"])){
 				$nfc = false;
 			} else {
@@ -28,7 +12,34 @@
 		?>
 	</head>
 	<body>
-		<div class="container-fluid">
+	<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">Simple Layout</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Nav link 1</a>
+        <a class="mdl-navigation__link" href="#">Nav link 2</a>
+        <a class="mdl-navigation__link" href="#">Nav link 3</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout__title">Simple Layout</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#">Nav link 2</a>
+      <a class="mdl-navigation__link" href="#">Nav link 2</a>
+      <a class="mdl-navigation__link" href="#">Nav link 3</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <p>Content</p>
+    <p>Goes</p>
+    <p>Here</p>
+  </main>
+</div>
+		<div class="mdl-grid">
 			<div class="row" id="one">
 				<div class="col-md-12">
 			  		<p><img src="img/logo.png" class="image-responsive" alt="logo" width="300px" height="400px" /></p>
@@ -110,8 +121,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="/bower_components/material-design-lite/material.min.js"></script>
 		<!-- Personal JavaScript -->
 		<script src="index.js" type="text/javascript"></script>
 	</body>
