@@ -86,16 +86,16 @@
 						<a href="http://spd-video-map.appspot.com/" target="_blank" class="list-group-item">
 							SPD Map
 						</a>
-						<a href="imagepage.html" target="_blank" class="list-group-item">
+						<a href="imagepage.php" target="_blank" class="list-group-item">
 							Image Scrambler
 						</a>
-						<a href="brythonpage.html" target="_blank" class="list-group-item">
+						<a href="brythonpage.php" target="_blank" class="list-group-item">
 							Brython Clock
 						</a>
 						<a href="puzzlepage.php" target="_blank" class="list-group-item">
 							15 Puzzle
 						</a>
-						<a href="sudokupage.html" target="_blank" class="list-group-item">
+						<a href="sudokupage.php" target="_blank" class="list-group-item">
 							Sudoku
 						</a>
 						<a href="http://arm387.wix.com/infovis-2015" target="_blank" class="list-group-item">

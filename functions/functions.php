@@ -29,5 +29,5 @@
         </div>
         <script src="/bower_components/material-design-lite/material.min.js"></script>
         <!-- Personal JavaScript -->
-        <script src="index.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
 <?php    } ?>
